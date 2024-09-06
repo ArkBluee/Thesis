@@ -1,0 +1,233 @@
+:root{
+    --background: #e4e9f7;
+    --sidebar-color: #fff;
+    --primary-color: #ff0000;
+    --primary-color-ligth: #f6fsff;
+    --toggle-color: #ddd;
+    --text-color: #707070;
+    --active-color: #d5d2d2;
+    --button-color:#ff0000;
+    --button-background: #000000;
+}
+body{
+    background: var(--active-color);
+}
+
+
+.user-header{
+    width: 100%;
+    height: 50px;
+    background: url("Header.png") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+}
+
+.user-header .text{
+    font-size: 1.5em;
+    font-weight: 1000;
+    color: #fff;
+}
+
+.header-tab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-tab .icon{
+    font-size: 2em;
+    color: #000000;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    background: transparent;
+    margin: 0;
+}
+
+.header-tab .name{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--button-background);
+    margin: 0 20px;
+}
+
+.header-tab .menu-btn{
+    border: none;
+    background: var(--active-color);
+    font: 1.1em ;
+}
+.header-tab .profile-btn{
+    border: none;
+    background: var(--active-color);
+    font-size: 1em;
+}
+.header-tab .logout-btn{
+    border: none;
+    background: var(--active-color);
+    font-size: 1em;
+}
+
+
+.user-container{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: var(--active-color);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.user-container .report-btn{
+    border: 6px solid var(--button-background);
+    background: var(--button-color);
+    padding: 30px 40px;
+    font-size: 5em;
+    cursor: pointer;
+    border-radius:100px;
+    color: var(--button-color);
+
+
+}
+
+.user-container .text{
+    font-size: 25px;
+    font-weight: 100;
+    color: var(--button-color);
+    padding: 10px 25px;
+    right: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-container .subtext{
+    font-size: 13px;
+    font-weight: 100;
+    color: var(--button-background);
+    padding: 20px 5px;
+    right: 0;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*new css*/
+.index-user-body {
+    margin: 0;
+    background-image: url(Header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.index-main-text {
+    color: white;
+    font-family: 'Russo One', Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 4vw;
+}
+.index-menu-text {
+    font-family: 'Russo One', Helvetica, sans-serif;
+    font-size: 2vw;
+    margin-left: 2vw;
+}
+.index-user-header {
+    color: white;
+    padding: 2vw;
+    text-align: left;
+    font-family: 'Russo One', Helvetica, sans-serif;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.index-header-tab {
+    background-color: #D9D9D9;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: 2.5px solid #000000;
+    outline-offset: -2.4px;
+    flex-shrink: 0;
+}
+.index-header-tab .index-menu-container {
+    display: flex;
+    align-items: center;
+}
+.index-header-tab .index-menu-btn {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+.index-header-tab .index-user-actions {
+    display: flex;
+    gap: 2vw;
+}
+
+.index-header-tab .index-user-actions .index-profile-btn,
+.index-header-tab .index-user-actions .index-logout-btn {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+    cursor: pointer;
+}
+.index-tabs-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    background-color: #D9D9D9;
+    padding: 2vw;
+}
+
+
+.rpc-tabs-user,
+.et-tabs-user,
+.ft-tabs,
+.map-tabs,
+.final-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw;
+    background-color: #D9D9D9;
+    flex: 1;
+}
+
+.return-index-btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    font-family: 'Russo One', Helvetica, sans-serif;
+    font-size: 4vw;
+    padding: 1.5vw 3vw;
+    margin: 2vw 0;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.return-index-btn:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+.return-index-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
